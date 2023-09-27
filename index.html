@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>ice cream</title>
 </head>
@@ -19,11 +20,15 @@
 
     <main class="container-fluid">
 
-        <section class="row text-center">
-            <div class="col-6">
-                <section class="row">
+        <section class="row text-center justify-content-between">
 
-                    <div class="col-2">
+            <div class="col-4">
+
+                <div class="fs-1">Cart</div>
+
+                <section class="row justify-content-between tableclr ">
+
+                    <div class="col-5">
                         <p>
                             name
                         </p>
@@ -48,11 +53,183 @@
 
                     </div>
 
+
+                </section>
+
+                <section class="row justify-content-between tableclr2  ">
+
+                    <div class="col-12 m-5">
+                        <p id="cart">
+
+                        </p>
+                    </div>
+
+                </section>
+
+                <section class="row justify-content-end tableclrtp align-items-center">
+
+                    <div class="col-5 fs-3">
+                        <p>
+                            Total:
+                        </p>
+                    </div>
+
+                    <div class="col-2 fs-4">
+                        <p>
+
+                        </p>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary m-2">Pay</button>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="col-8">
+
+                <section class="row mt-5 text-start">
+
+
+
+
+                    <!-- top row -->
+
+                    <div class="col-12 mt-5 mb-5">
+
+                        <p class="fs-2">Toppings</p>
+
+                        <section class="row justify-content-between text-center">
+
+                            <div class="col-4">
+
+                                <img src="https://images.unsplash.com/photo-1587899576587-766a2afea5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3ByaW5rbGVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt="sprinkles">
+                                <p class="tableclr2"><button class="m-1 btn btn-success"
+                                        onclick="addSprinklesToCart()"><i
+                                            class=" mdi mdi-cart-plus"></i></button>Sprinkles $2</p>
+                            </div>
+
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/157484996/photo/chocolate-chips-background.webp?b=1&s=170667a&w=0&k=20&c=A2lPojFmaDpkLavNfjPy9PlBvZkhSl_aEE_SptEHrP8="
+                                    alt="Chocolate Chips">
+                                <p class="tableclr2"><button class="m-1 btn btn-success"
+                                        onclick="addChocolateChipsToCart()"><i
+                                            class=" mdi mdi-cart-plus"></i></button>Chocolate Chips $3</p>
+                            </div>
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/1503401224/photo/worms-candy.webp?b=1&s=170667a&w=0&k=20&c=MkAeE8IpkE4-sihCQoE4u-8Gq3nLZuavm8MFgro5T58="
+                                    alt="Gummy Worms">
+                                <p class="tableclr2"><button class="m-1 btn btn-success"
+                                        onclick="addGummyWormsToCart()"><i class=" mdi mdi-cart-plus"></i></button>Gummy
+                                    Worms $2</p>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+
+                    <!-- middle row -->
+
+                    <div class="col-12 mt-5 mb-5">
+
+                        <p class="fs-2">Vessels</p>
+
+                        <section class="row justify-content-between text-center">
+
+                            <div class="col-4">
+
+                                <img src="https://images.unsplash.com/photo-1559703248-dcaaec9fab78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW0lMjBjb25lfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    alt="cone">
+                                <p class="tableclr2">Cone $3</p>
+                            </div>
+
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/816249170/photo/waffle-bowl-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=aLq2W3HYIn0aBwMclopU5qcKC2el48uKcVBMg2ptlAQ="
+                                    alt="cone">
+                                <p class="tableclr2">Waffle Bowl $4</p>
+                            </div>
+
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/926010866/photo/dark-chocolate-dipped-waffle-cones.webp?b=1&s=170667a&w=0&k=20&c=tZNQ0oPD3IyjfqFMYj9MnmhBHFf2q7Y7YQ2veaNmOyw="
+                                    alt="dipped cone">
+                                <p class="tableclr2">Dipped Cone $5</p>
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+
+                    <!-- bottom row -->
+
+                    <div class="col-12 mt-5 mb-5">
+
+                        <p class="fs-2">Ice cream</p>
+
+                        <section class="row justify-content-between text-center">
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/1272296227/photo/home-made-smores-ice-cream.webp?b=1&s=170667a&w=0&k=20&c=g9y7seISR6P7h3ZDft2Q2R7kqeIVkGa581bWvfdj6AU="
+                                    alt="Vanilla">
+
+                                <p class="tableclr2"><button class="m-1 btn btn-success" onclick="addVanillaToCart()"><i
+                                            class=" mdi mdi-cart-plus"></i></button>Vanilla $3</p>
+
+                            </div>
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/1287938576/photo/cookie-dough-ice-cream-in-a-metal-scoop.webp?b=1&s=170667a&w=0&k=20&c=QnM08Cwo3wuj5Rxlp_W-iRqq9qKC-Yik1mk951ydNFg="
+                                    alt="Cookie dough">
+
+                                <p class="tableclr2"><button class="m-1 btn btn-success"
+                                        onclick="addCookieDoughToCart()"><i
+                                            class=" mdi mdi-cart-plus"></i></button>Cookie Dough $4</p>
+
+                            </div>
+
+                            <div class="col-4">
+
+                                <img src="https://media.istockphoto.com/id/91830301/photo/red-ice-cream.webp?b=1&s=170667a&w=0&k=20&c=vnQ1mexM017lMweXvMY4yT8Ue63R_AhEa3TxOAz87Z4="
+                                    alt="strawberry">
+
+                                <p class="tableclr2"><button class="m-1 btn btn-success"
+                                        onclick="addStrawberryToCart()"><i
+                                            class=" mdi mdi-cart-plus"></i></button>Strawberry $4</p>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+
+
+
                 </section>
 
             </div>
 
         </section>
+
+
+
+
 
 
     </main>

@@ -1,3 +1,24 @@
 .bgclr {
     background-color: violet;
 }
+
+.tableclr {
+    background-color: white;
+    border-bottom: 5px solid gray
+}
+
+.tableclr2 {
+    background-color: white;
+}
+
+img {
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    border: 10px solid white;
+}
+
+.tableclrtp {
+    background-color: white;
+    border-top: 5px solid gray;
+}
